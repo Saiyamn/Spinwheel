@@ -1,0 +1,265 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+
+  .wheel-container {
+    width: 100%;
+    height: 100%;
+
+    .get-started {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .form-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+        @media screen and (max-width: 750px) {
+          display: flex;
+          align-items: center;
+
+          flex: 1;
+        }
+
+        @media screen and (max-width: 650px) {
+          flex-direction: column;
+          gap: 0px;
+        }
+
+        img {
+          width: 320px;
+          height: 320px;
+
+          @media screen and (max-width: 650px) {
+            width: 230px;
+            height: 230px;
+          }
+        }
+
+        .success {
+          width: 400px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+
+          @media screen and (max-width: 650px) {
+            padding-top: 40px;
+          }
+          .success-msg {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 20px;
+            width: 250px;
+          }
+
+          .success-discount-option {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 24px;
+            width: 250px;
+          }
+
+          .coupon {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 27px;
+            color: #ffffff;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+
+            .code {
+              background: rgba(20, 20, 20, 0.2);
+              padding: 10px 30px 10px 15px;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+            }
+
+            .copy {
+              width: 90px;
+              background: #146531;
+              padding: 10px 0px;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .icon {
+                //font-size: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3.5px;
+                border-radius: 50%;
+                background: white;
+                color: #146531;
+              }
+            }
+          }
+
+          .close-btn {
+            background: #146531;
+            color: #ffffff;
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+          }
+
+          .discount-validity {
+            font-size: 10px;
+            font-weight: 300;
+            font-family: Noto Sans;
+            font-style: italic;
+          }
+        }
+
+        .form-validation {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 340px;
+
+          @media screen and (max-width: 750px) {
+            width: 300px;
+            padding: 35px;
+          }
+
+          h3 {
+            font-size: 25px;
+            font-family: Poppins;
+            font-weight: 700;
+          }
+
+          .email-section {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+
+            .icon {
+              color: #49454f;
+              padding: 5px;
+            }
+
+            div {
+              padding: 5px;
+              h4 {
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 400;
+                color: #49454f;
+              }
+
+              p {
+                font-size: 12px;
+                color: red;
+              }
+            }
+            input {
+              border: none;
+              outline: none;
+            }
+          }
+
+          .phone-section {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+
+            .icon {
+              color: #49454f;
+              padding: 5px;
+            }
+
+            div {
+              padding: 5px;
+              h4 {
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 400;
+                color: #49454f;
+              }
+            }
+            input {
+              border: none;
+              outline: none;
+            }
+          }
+
+          .agree-disagree-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px;
+            border: 1.5px solid #000000;
+
+            p {
+              font-size: 10px;
+            }
+          }
+
+          .form-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #146531;
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 22px;
+            color: #ffffff;
+            border-radius: 20px;
+            cursor: pointer;
+            line-height: 42px;
+          }
+
+          .conditions {
+            display: flex;
+            align-items: center;
+            font-size: 8px;
+            font-family: Noto Sans;
+            font-weight: 300;
+          }
+
+          .close {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-family: Poppins;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .misc-details {
+        display: none;
+        @media screen and (max-width: 750px) {
+          display: flex;
+          flex: 1;
+
+          img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+          }
+        }
+
+        @media screen and (max-width: 650px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

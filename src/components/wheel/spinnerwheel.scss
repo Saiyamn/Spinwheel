@@ -1,0 +1,95 @@
+.spinner-wheel {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    @media screen and (max-width: 750px) {
+      display: flex;
+      align-items: center;
+    }
+
+    .wheel-wrapper {
+      @media screen and (max-width: 750px) {
+        flex: 1;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+
+      .wheel-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        .spin-wheel {
+          width: 400px;
+          height: 400px;
+
+          @media screen and (max-width: 750px) {
+            width: 300px;
+            height: 300px;
+          }
+
+          @media screen and (max-width: 650px) {
+            width: 300px;
+            height: 300px;
+          }
+          object-fit: cover;
+        }
+
+        .wheel-axis {
+          width: 65px;
+          height: 65px;
+          object-fit: cover;
+          position: absolute;
+          top: 170px;
+
+          @media screen and (max-width: 750px) {
+            width: 42px;
+            height: 42px;
+            top: 128px;
+          }
+        }
+      }
+
+      .spin-btn {
+        background: #146531;
+        color: #ffffff;
+        font-size: 25px;
+        font-family: Poppins;
+        padding: 12px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+
+        @media screen and (max-width: 750px) {
+          font-size: 24px;
+          padding: 10px 25px;
+        }
+      }
+    }
+
+    .ad-container {
+      display: none;
+      @media screen and (max-width: 750px) {
+        display: flex;
+        flex: 1;
+
+        img {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
+      }
+
+      @media screen and (max-width: 650px) {
+        display: none;
+      }
+    }
+  }
+}
